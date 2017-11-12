@@ -153,7 +153,7 @@ The function body is executed immediately by the implementation of the promise. 
 
 At some point the promise will change it's status to fulfilled or rejected and by that time the associated handlers queued up by the promise's *then* method will be called.
 
-The next example shows a simple implementation of promise:
+The next example shows a simple implementation of a promise:
 
 ```javascript
 function loadData(){
@@ -177,5 +177,6 @@ function createPromise(){
 }
 
 ```
+By the time the request is finsihed and valid, then the response will be rendered. The methods *then* and *catch* return a promise thereselfs, so they can be chained:
 
 ![promises](https://cdn.rawgit.com/Vectaio/a76330b025baf9bcdf07cb46e5a9ef9e/raw/26c4213a93dee1c39611dcd0ec12625811b20a26/js-promise.svg)
