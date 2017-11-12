@@ -182,4 +182,33 @@ By the time the request is finsihed and valid, then the response will be rendere
 ![promises](https://cdn.rawgit.com/Vectaio/a76330b025baf9bcdf07cb46e5a9ef9e/raw/26c4213a93dee1c39611dcd0ec12625811b20a26/js-promise.svg)
 
 Let's leave the world of web programming and look into another topic:
+
 **functional programming with JavaScript**
+
+
+
+```javascript
+var light = {
+        on  : false
+};
+function switchLight(){
+    light.on = !light.on;
+}
+switchLight();
+
+```
+
+
+```javascript
+var switchedOffLight = {
+        on : false
+};
+function switchLight(light){
+    return { on: !light.on };
+}
+var switchedOnLight = switchLight(switchedOffLight);
+
+
+
+
+```
