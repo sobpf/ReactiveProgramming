@@ -10,7 +10,6 @@ In this blog we will dive into the world of reactive programming with JavaScript
 
 3. Reactive Programming in JavaScript
 
-4. Important Links
 
 So let's get started!
 
@@ -242,3 +241,25 @@ var filtered = values.filter(value => value % 2 === 0);
 **2. What is Reactive Programming** 
 
 *“ReactiveX is a library for composing asynchronous and event-based programs by using observable sequences.”* [ReactiveX](http://reactivex.io/intro.html)
+
+Thats the first statement on the [ReactiveX Site](http://reactivex.io/intro.html) and for us the point to step into the reactive world.
+
+The key principles of reactive programming are: 
+
+- streams
+- observables
+- operators
+- schedulers
+
+**Streams** 
+From now on every input, properties, chaches are managed as part of a stream. 
+```
+------------------------------------------------------------->
+```
+A stream is represented through an
+
+**Observable**
+
+An *observer* subscribes to an *observable* so when from time to time the *observable* emits a new item, the observer can react on that.
+
+![Observables](http://reactivex.io/assets/operators/legend.png)
