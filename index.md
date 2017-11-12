@@ -71,7 +71,7 @@ function myFunction (firstname, surname){
 ```
 The first function is gets two parameters and returns them as object. As soon as the surronding function or script is executed - the first function can be executed. The second function on the other hand is a functional expression and is ready to be executed as soon as the line, in which it is defined, is reached in the executed script. 
 
-There are some **predefined functions** you can use.
+There are some **global functions** you can use.
 
 name | example
 ------------ | -------------
@@ -82,3 +82,4 @@ String(Object) | ``` String(354646.55) // "354646.55" ```
 parseFloat(String) | ``` parseFloat("33.33333333") // 33.33333333 ```
 parseInt(String) | ``` parseInt(“456.235665”) // 456 ```
  
+You can use those functions with all JavaScript objekts. [Here](https://www.w3schools.com/jsref/jsref_obj_global.asp) is a list of all global functions.
