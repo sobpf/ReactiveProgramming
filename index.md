@@ -4,17 +4,17 @@
 ### Overview
 In this blog we will dive into the world of reactive programming with JavaScript. Basically we devided them into three categories:
 
-###1.JavaScript basics
+1.JavaScript basics
 
-###2. What is Reactive Programming?
+2. What is Reactive Programming?
 
-###3. Reactive Programming in JavaScript
+3. Reactive Programming in JavaScript
 
-###4. Important Links
+4. Important Links
 
 So let's get started!
 
-##1. JavaScript basics 
+1. JavaScript basics 
 
 First of all, let’s do a short recap on javascript. Programming for the Web javascript is the programming language of your choice. Together with HTML and CSS you are ready to become an web developer. Javascript offers even more with node.js the world of server-side development is your’s as well. Brendan Eich invented Javascript back in 1995. Two years after that it became an ECMA standard (“ECMA-262) . 
 
@@ -30,7 +30,7 @@ Quick example:
 
 Moving on to: Arrays and Objects
 Objects
-    var myObject = {
+ `´ var myObject = {
             Name :  “Max”,
             Nachname : “Mustermann”
 Address : {Straße : “Musterstraße”, Hausnummer : 5, PLZ : “11111” , Stadt :
@@ -40,7 +40,7 @@ Address : {Straße : “Musterstraße”, Hausnummer : 5, PLZ : “11111” , St
 Arrays
     var myElements = [ 2 , 3, 4, 5 ]; || 
 var myElements = new Array(2 , 3, 4, 5);
-        var alsoMyElements = [ 2, “Hello”, new Date(), 5 ];
+        var alsoMyElements = [ 2, “Hello”, new Date(), 5 ];`´  
 We already looked at Variables, now Objects are like Variables since they are containers for data too. Objects can hold many values. Those values don’t have to be of the same type. Arrays are special variables too. They can contain many values as well. 
 How to access those values? With objects you use the names of the values, e.g. myObject.Name returns “Max”. Arrays returns values by numbers, e.g. myElements[1] returns 2. Remember, the first element of an Array is called by 0, the second by 1 and so on. 
 
