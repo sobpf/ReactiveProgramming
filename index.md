@@ -185,7 +185,9 @@ Let's leave the world of web programming and look into another topic:
 
 **functional programming with JavaScript**
 
+What is functional programming? In short, functional programming is programming without mutable variables and assignments as well as imperative control flows. That means variables are constant, once a value is assigned to them, it won't change. 
 
+For example, we want to programm a light switcher. We have a light which is an or off. First approach could be something like that:
 
 ```javascript
 var light = {
@@ -197,7 +199,7 @@ function switchLight(){
 switchLight();
 
 ```
-
+There is a *light* object with *on* as key and true or false as value. When we want to switch the light, we change the property of the light. Thinking of functional programming, that is not what we want. We want the property of the light to be constant, so therefore we try again:
 
 ```javascript
 var switchedOffLight = {
@@ -207,8 +209,6 @@ function switchLight(light){
     return { on: !light.on };
 }
 var switchedOnLight = switchLight(switchedOffLight);
-
-
-
-
 ```
+Now the light is switched off and when we want it to be switched on, we pass the light as argument to the *switchLight* function. 
+The *switchedOffLight* won't change and the function only uses variables which are passed as parameter and returns a new light.
