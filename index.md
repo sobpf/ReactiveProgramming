@@ -215,9 +215,16 @@ The *switchedOffLight* won't change and the function only uses variables which a
 
 For JavaScript *Arrays* there are functional programmed functions like
 
--map 
--filter
--reduce
+- map 
+- filter
+- reduce
 
 ```javascript
+var values = [1, 2, 3];
+ 
+var multiplied = values.map(function multiplyBy2(value){
+  return value * 2;
+});
+
+//multiplied [2, 4, 6]
 ```
