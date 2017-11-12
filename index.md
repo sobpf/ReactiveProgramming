@@ -187,7 +187,7 @@ Let's leave the world of web programming and look into another topic:
 
 What is functional programming? In short, functional programming is programming without mutable variables and assignments as well as imperative control flows. That means variables are constant, once a value is assigned to them, it won't change. 
 
-For example, we want to programm a light switcher. We have a light which is an or off. First approach could be something like that:
+For example, we want to programm a light switcher. We have a light which is on or off. First approach could be something like that:
 
 ```javascript
 var light = {
@@ -212,3 +212,12 @@ var switchedOnLight = switchLight(switchedOffLight);
 ```
 Now the light is switched off and when we want it to be switched on, we pass the light as argument to the *switchLight* function. 
 The *switchedOffLight* won't change and the function only uses variables which are passed as parameter and returns a new light.
+
+For JavaScript *Arrays* there are functional programmed functions like
+
+-map 
+-filter
+-reduce
+
+```javascript
+```
