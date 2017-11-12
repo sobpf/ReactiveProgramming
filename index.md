@@ -138,6 +138,34 @@ Callbacks are quite handy but can be confusing when the application has a lot of
 
 **Promises** 
 
-Alternatively you can use [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises). 
+Alternatively you can use [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises). A promise represents a value which is not present by the time the promise is created. A request is handeld asynchronous but returns a value like a synchronous function. Let's take a look at the syntax:
 
-![promises](https://mdn.mozillademos.org/files/8633/promises.png)
+```javascript
+var myPromise = new Promise(function(resolve, reject) {  
+	...
+});
+```
+```javascript
+function promiseTest(){
+var myPromise = promiseTest();
+        myPromise.then((that) => {var response = JSON.parse(that.responseText);//render content})  
+              .catch((err) => console.log("rejected:", err));
+}
+function promiseTest(){
+    return new Promise((resolve, reject) => {
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET","URL",true);
+        xhttp.onreadystatechange = function(){
+            if (this.readyState == 4 && this.status == 200) {
+                resolve (this);
+            }else if (this.readyState == 4 && this.status !== 400){
+                reject(false);
+            }
+        };
+        xhttp.send();
+    })  
+}
+
+```
+
+![promises](https://cdn.rawgit.com/Vectaio/a76330b025baf9bcdf07cb46e5a9ef9e/raw/26c4213a93dee1c39611dcd0ec12625811b20a26/js-promise.svg)
