@@ -73,5 +73,8 @@ The first function is gets two parameters and returns them as object. As soon as
 
 There are some **predefined functions** you can use.
 
+name | example
+------------ | -------------
+eval | ```javascript eval("3+2*4")```
 
 
