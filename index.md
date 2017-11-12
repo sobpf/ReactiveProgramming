@@ -220,11 +220,23 @@ For JavaScript *Arrays* there are functional programmed functions like
 - reduce
 
 ```javascript
-var values = [1, 2, 3];
+var values = [1, 2, 3, 4];
  
 var multiplied = values.map(function multiplyBy2(value){
   return value * 2;
 });
 
-//multiplied [2, 4, 6]
+//multiplied [2, 4, 6, 8]
+
+var filtered = values.filter(function filterEvan(value){
+  return value % 2 === 0;
+});
+
+//filtered [2, 4]
+
+var reduced = values.reduce(function(accumulator, currentValue) {
+    return accumulator + currentValue;
+});
+
+//reduced 10
 ```
