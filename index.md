@@ -21,8 +21,8 @@ First of all, let’s do a short recap on javascript. Programming for the Web ja
 First steps: Variables and Contants
 - Variables
 ```javascript 
-    var newString = “String”;    ||       let newString = “String”;
-    let a, b = 10;                        let c = 10, d = “String”;
+    var newString = "String";    ||       let newString = "String";
+    let a, b = 10;                        let c = 10, d = "String";
 ```     
 - Constants
 ```javascript
@@ -38,7 +38,7 @@ Moving on to: Arrays and Objects
     var myObject = {
             Name :  "Max",
             Nachname : "Mustermann"
-            Address : {Street : "Musterstraße", Number : 5, ZIPCode : "11111" , City : "Musterstadt"}
+            Address : {Street : "Musterstraße", No : 5, ZIPCode : "11111" , City : "Musterstadt"}
     } 
 ```
 - Arrays
