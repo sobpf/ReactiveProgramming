@@ -91,4 +91,10 @@ As mentioned earlier JavaScript is the programming language of the web, so what'
 
 ![event handling](/eventHandling.png)
 
-This is an easy example. We have a simple HTML which renders a label, an input field, a button and another input field (our output field). As soon as the user clicks on the button, the javascript function *greet()* is called. It simply gets the value of the input field and prepares an greeting for the output field. This is an example for synchronous handling. 
+This is an easy example. We have a simple HTML which renders a label, an input field, a button and another input field (our output field). As soon as the user clicks on the button, the javascript function *greet()* is called. It simply gets the value of the input field and prepares an greeting for the output field. This is an example for synchronous handling. One line of code is executed after the other and there are no delays in time.  
+
+Normally web applications aren't as simple as this. The data that is displayed is not stored inside the HTML or the Javascript and user inputs are not handeld inside the application. Usually a server provides the necessary data for the application. 
+
+![browserServer](/browserServer.png)
+
+
