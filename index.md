@@ -29,18 +29,21 @@ Variables in Javascript are declared by “var”. With [ES6](http://www.ecma-in
 Quick example:
 
 Moving on to: Arrays and Objects
+
 Objects
- ``` var myObject = {
+``` var myObject = {
             Name :  “Max”,
             Nachname : “Mustermann”
             Address : {Straße : “Musterstraße”, Hausnummer : 5, PLZ : “11111” , Stadt :
                         “Musterstadt”}
-    } ```
+    } 
+```
 Arrays
-``
+```
     var myElements = [ 2 , 3, 4, 5 ]; || 
     var myElements = new Array(2 , 3, 4, 5);
-    var alsoMyElements = [ 2, “Hello”, new Date(), 5 ];```
+    var alsoMyElements = [ 2, “Hello”, new Date(), 5 ];
+```
     
     
 We already looked at Variables, now Objects are like Variables since they are containers for data too. Objects can hold many values. Those values don’t have to be of the same type. Arrays are special variables too. They can contain many values as well. 
