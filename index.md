@@ -249,6 +249,8 @@ The key principles of reactive programming are:
 - streams
 - observables
 - operators
+- single
+- subject
 - schedulers
 
 **Streams** 
@@ -268,4 +270,15 @@ In short: an observable is a source of items which can be subscribed to.
 
 **Operators**
 
-Operators work on an observable, they operate with the items and most of them return an observable themself. Be aware - we do functional programming so the original values won't change and new ones are created during the operation.   
+Operators work on an observable, they operate with the items and most of them return an observable themself. Be aware - we do functional programming so the original values won't change and new ones are created during the operation. Since operator can return observables it's possible to chain multiple operators.
+There are different types of operators:
+
+- creating observables - operators orginate new observables
+- transforming observables - operators that transform items
+- filtering observables - operators that only emits items matching a criteria 
+- combining observables - operators which combine different observables into a single one
+- and many more
+
+**Schedulers**
+
+
