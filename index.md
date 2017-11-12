@@ -85,7 +85,10 @@ parseInt(String) | ``` parseInt(“456.235665”) // 456 ```
 You can use those functions with all JavaScript objekts. [Here](https://www.w3schools.com/jsref/jsref_obj_global.asp) is a list of all global functions.
 
 
-- **event handling**
+**event handling**
+
 As mentioned earlier JavaScript is the programming language of the web, so what's more common in the web then to click on something or to input data? That's why we'll take a look at event handling. 
 
 ![event handling](/eventHandling.png)
+
+This is an easy example. We have a simple HTML which renders a label, an input field, a button and another input field (our output field). As soon as the user clicks on the button, the javascript function *greet()* is called. It simply gets the value of the input field and prepares an greeting for the output field. This is an example for synchronous handling. 
