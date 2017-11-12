@@ -228,15 +228,14 @@ var multiplied = values.map(function multiplyBy2(value){
 
 //multiplied [2, 4, 6, 8]
 
-var filtered = values.filter(function filterEvan(value){
-  return value % 2 === 0;
-});
-
-//filtered [2, 4]
-
 var reduced = values.reduce(function(accumulator, currentValue) {
     return accumulator + currentValue;
 });
 
 //reduced 10
+
+
+var filtered = values.filter(value => value % 2 === 0);
+
+//filtered [2, 4]
 ```
