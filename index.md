@@ -145,25 +145,35 @@ var myPromise = new Promise(function(resolve, reject) {
 	...
 });
 ```
+The function body is executed immediately by the implementation of the promise. Resolve and reject ar passed into the function and called when the purpose of the function is either fulfilled or failed. A promise has three states and is always in one of them:
+
+- pending: initial state
+- fulfilled: the operation is completed successfully
+- rejected: the operation has failed
+
+At some point the promise will change it's status to fulfilled or rejected and by that time the associated handlers queued up by the promise's *then* method will be called.
+
+The next example shows a simple implementation of promise:
+
 ```javascript
-function promiseTest(){
-var myPromise = promiseTest();
+function loadData(){
+	var myPromise = createPromise();
         myPromise.then((that) => {var response = JSON.parse(that.responseText);//render content})  
               .catch((err) => console.log("rejected:", err));
 }
-function promiseTest(){
-    return new Promise((resolve, reject) => {
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("GET","URL",true);
-        xhttp.onreadystatechange = function(){
-            if (this.readyState == 4 && this.status == 200) {
-                resolve (this);
-            }else if (this.readyState == 4 && this.status !== 400){
-                reject(false);
-            }
-        };
-        xhttp.send();
-    })  
+function createPromise(){
+        return new Promise((resolve, reject) => {
+		var xhttp = new XMLHttpRequest();
+		xhttp.open("GET","URL",true);
+		xhttp.onreadystatechange = function(){
+		    if (this.readyState == 4 && this.status == 200) {
+			resolve (this);
+		    }else if (this.readyState == 4 && this.status !== 200){
+			reject(false);
+		    }
+		};
+		xhttp.send();
+	})  
 }
 
 ```
