@@ -77,8 +77,8 @@ name | example
 ------------ | -------------
 eval | ``` eval("3+2*4")   // 11 ```
 isNaN(Value) | ``` isNaN("TRUE")  //  true || isNaN(8) //  false ```
-Number(object) | ``` Number(“354646.55”) // 354646.55 ```
-String(Object) | ``` String(354646.55) // “354646.55” ```
-parseFloat(String) | ``` parseFloat(“33.33333333”) // 33.33333333 ```
+Number(object) | ``` Number("354646.55") // 354646.55 ```
+String(Object) | ``` String(354646.55) // "354646.55" ```
+parseFloat(String) | ``` parseFloat("33.33333333") // 33.33333333 ```
 parseInt(String) | ``` parseInt(“456.235665”) // 456 ```
  
