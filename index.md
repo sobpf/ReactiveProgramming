@@ -4,7 +4,7 @@
 ### Overview
 In this blog we will dive into the world of reactive programming with JavaScript. Basically we devided them into three categories:
 
-1.JavaScript basics
+1. JavaScript basics
 
 2. What is Reactive Programming?
 
@@ -14,7 +14,7 @@ In this blog we will dive into the world of reactive programming with JavaScript
 
 So let's get started!
 
-1. JavaScript basics 
+1. **JavaScript basics** 
 
 First of all, let’s do a short recap on javascript. Programming for the Web javascript is the programming language of your choice. Together with HTML and CSS you are ready to become an web developer. Javascript offers even more with node.js the world of server-side development is your’s as well. Brendan Eich invented Javascript back in 1995. Two years after that it became an ECMA standard (“ECMA-262) . 
 
