@@ -30,17 +30,19 @@ Quick example:
 
 Moving on to: Arrays and Objects
 Objects
- `´ var myObject = {
+ ``` var myObject = {
             Name :  “Max”,
             Nachname : “Mustermann”
-Address : {Straße : “Musterstraße”, Hausnummer : 5, PLZ : “11111” , Stadt :
-        “Musterstadt”}
-
-    }
+            Address : {Straße : “Musterstraße”, Hausnummer : 5, PLZ : “11111” , Stadt :
+                        “Musterstadt”}
+    } ```
 Arrays
+``
     var myElements = [ 2 , 3, 4, 5 ]; || 
-var myElements = new Array(2 , 3, 4, 5);
-        var alsoMyElements = [ 2, “Hello”, new Date(), 5 ];`´  
+    var myElements = new Array(2 , 3, 4, 5);
+    var alsoMyElements = [ 2, “Hello”, new Date(), 5 ];```
+    
+    
 We already looked at Variables, now Objects are like Variables since they are containers for data too. Objects can hold many values. Those values don’t have to be of the same type. Arrays are special variables too. They can contain many values as well. 
 How to access those values? With objects you use the names of the values, e.g. myObject.Name returns “Max”. Arrays returns values by numbers, e.g. myElements[1] returns 2. Remember, the first element of an Array is called by 0, the second by 1 and so on. 
 
