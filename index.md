@@ -289,4 +289,4 @@ A subject is both observer and observable. It can subscribe to an observable and
 
 **Schedulers**
 
-
+With schedulers you can introduce multithreading into your observable operators, you can do so by telling those operators to use a particular scheduler. 
