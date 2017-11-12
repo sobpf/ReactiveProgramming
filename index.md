@@ -91,10 +91,10 @@ As mentioned earlier JavaScript is the programming language of the web, so what'
 
 ![event handling](/eventHandling.png)
 
-This is an easy example. We have a simple HTML which renders a label, an input field, a button and another input field (our output field). As soon as the user clicks on the button, the javascript function *greet()* is called. It simply gets the value of the input field and prepares an greeting for the output field. This is an example for synchronous handling. One line of code is executed after the other and there are no delays in time.  
+This is an easy example. We have a simple HTML which renders a label, an input field, a button and another input field (our output field). As soon as the user clicks on the button, the javascript function *greet()* is called. It simply gets the value of the input field and prepares a greeting for the output field. This is an example for synchronous handling. One line of code is executed after the other and there are no delays in time.  
 
-Normally web applications aren't as simple as this. The data that is displayed is not stored inside the HTML or the Javascript and user inputs are not handeld inside the application. Usually a server provides the necessary data for the application. 
+Normally web applications aren't as simple as that. The data that is displayed is not stored inside the HTML or the Javascript and user inputs are not completely handeld inside the application. Usually a server provides the necessary data for the application. 
 
 ![browserServer](/browserServer.png)
 
-
+The above images shows a typical flow of a request. The user submits a form or clicks on a button in order to some information or data. An event occours and a request is created and send with JavaScript. The server recieves the request, processes it and creates and send a response. The browser recieves the response and processes the data. It will take some time to deliever the request, for the server to prepare the response and to deliever the response. How long it's going to be, is not clear by the time the browser sends the request. With synchronous handling as our fist example, the browser will stop until the request is back and the user is unable to do something else. Since no one would like to use an application like that, we work with asynchronous handling. By the time the request is send, the browser continues with the execution of script and handls other events, but once the response arrives it will continoue to process the returned data. 
