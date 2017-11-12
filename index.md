@@ -36,17 +36,16 @@ Moving on to: Arrays and Objects
 - Objects
 ```javascript 
     var myObject = {
-            Name :  “Max”,
-            Nachname : “Mustermann”
-            Address : {Street : “Musterstraße”, Number : 5, ZIP Code : “11111” , City :
-                        “Musterstadt”}
+            Name :  "Max",
+            Nachname : "Mustermann"
+            Address : {Street : "Musterstraße", Number : 5, ZIPCode : "11111" , City : "Musterstadt"}
     } 
 ```
 - Arrays
 ```javascript
     var myElements = [ 2 , 3, 4, 5 ]; || 
     var myElements = new Array(2 , 3, 4, 5);
-    var alsoMyElements = [ 2, “Hello”, new Date(), 5 ];
+    var alsoMyElements = [ 2, "Hello", new Date(), 5 ];
 ```
     
     
