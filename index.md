@@ -75,6 +75,7 @@ There are some **predefined functions** you can use.
 
 name | example
 ------------ | -------------
-eval | ```javascript eval("3+2*4")```
+eval | ``` eval("3+2*4")   // 11```
+isNaN(Value) | ```isNaN(“TRUE”)  //  true || isNaN(8) //  false ```
 
 
