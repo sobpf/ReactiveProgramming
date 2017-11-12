@@ -99,7 +99,7 @@ Normally web applications aren't as simple as that. The data that is displayed i
 
 The above images shows a typical flow of a request. The user submits a form or clicks on a button in order to some information or data. An event occours and a request is created and send with JavaScript. The server recieves the request, processes it and creates and send a response. The browser recieves the response and processes the data. It will take some time to deliever the request, for the server to prepare the response and to deliever the response. How long it's going to be, is not clear by the time the browser sends the request. With synchronous handling as our fist example, the browser will stop until the request is back and the user is unable to do something else. Since no one would like to use an application like that, we work with asynchronous handling. By the time the request is send, the browser continues with the execution of script and handls other events, but once the response arrives it will continue to process the returned data. 
 
-To catch the arriving response **callbacks** are used. The next example displays a simple implementation of a [XMLHttpRequest's](https://www.w3schools.com/xml/xml_http.asp) callback 
+To catch the arriving response **callbacks** are used. The next example displays a simple implementation of a [XMLHttpRequest's](https://www.w3schools.com/xml/xml_http.asp) callback: 
 
 ``` 
 <div>
@@ -115,7 +115,7 @@ function loadData() {
 			processData(this);
 		}
 	};
-	xhttp.open("GET","https://sapui5.netweaver.ondemand.com/test-resources/sap/ui/demokit/explored/products.json",true);
+	xhttp.open("GET","URL",true);
 	xhttp.send();
 }
 function processData(that) {
@@ -130,3 +130,4 @@ function processData(that) {
 	
 }
 ```
+Once the button is clicked, a request is send to the URL in order to get data. By the time the [request](https://www.w3schools.com/xml/ajax_xmlhttprequest_response.asp) is finished and the response is ready (state = 4) as well as the status is ok (200), the data will be processed.  
