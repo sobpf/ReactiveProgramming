@@ -83,3 +83,8 @@ parseFloat(String) | ``` parseFloat("33.33333333") // 33.33333333 ```
 parseInt(String) | ``` parseInt(“456.235665”) // 456 ```
  
 You can use those functions with all JavaScript objekts. [Here](https://www.w3schools.com/jsref/jsref_obj_global.asp) is a list of all global functions.
+
+
+- **event handling**
+As mentioned earlier JavaScript is the programming language of the web, so what's more common in the web then to click on something or to input data? That's why we'll take a look at event handling. 
+
