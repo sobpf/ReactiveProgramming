@@ -252,7 +252,7 @@ The key principles of reactive programming are:
 - schedulers
 
 **Streams** 
-From now on every input, properties, chaches are managed as part of a stream. 
+From now on every input, properties, array are managed as part of a stream. 
 ```
 ------------------------------------------------------------->
 ```
@@ -261,5 +261,11 @@ A stream is represented through an
 **Observable**
 
 An *observer* subscribes to an *observable* so when from time to time the *observable* emits a new item, the observer can react on that.
-
+The following image by [ReactiveX](http://reactivex.io) shows the flow of items emitted by an observable and processed into a new observable. 
 ![Observables](http://reactivex.io/assets/operators/legend.png)
+
+In short: an observable is a source of items which can be subscribed to. 
+
+**Operators**
+
+Operators work on an observable, they operate with the items and most of them return an observable themself. Be aware - we do functional programming so the original values won't change and new ones are created during the operation.   
