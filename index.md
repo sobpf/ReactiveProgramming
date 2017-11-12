@@ -266,7 +266,7 @@ An *observer* subscribes to an *observable* so when from time to time the *obser
 The following image by [ReactiveX](http://reactivex.io) shows the flow of items emitted by an observable and processed into a new observable. 
 ![Observables](http://reactivex.io/assets/operators/legend.png)
 
-In short: an observable is a source of items which can be subscribed to. 
+In short: an observable is a source of items which can be subscribed to. There are 3 types of output -> onNext a next item, onError -> an error occoured the stream ends or onCompletet -> the stream ended.
 
 **Operators**
 
@@ -278,6 +278,14 @@ There are different types of operators:
 - filtering observables - operators that only emits items matching a criteria 
 - combining observables - operators which combine different observables into a single one
 - and many more
+
+**Single**
+
+A single is a special observable. It doesn't emit a series of items but either emits on item or an error notification.
+
+**Subject**
+
+A subject is both observer and observable. It can subscribe to an observable and can pass through items it observes as well as emit new items. 
 
 **Schedulers**
 
